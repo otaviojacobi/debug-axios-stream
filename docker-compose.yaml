@@ -1,0 +1,7 @@
+version: "2"
+
+services:
+    example:
+      build: .
+      labels:
+        io.balena.features.supervisor-api: '1'

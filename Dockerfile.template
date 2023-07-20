@@ -1,0 +1,6 @@
+FROM balenalib/%%BALENA_ARCH%%-node:18-bullseye-build
+
+COPY . .
+
+RUN npm ci
+ENTRYPOINT ["node", "index.js"]
